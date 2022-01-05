@@ -41,7 +41,7 @@ console.log('------------ 나는 구분선이야 -----------')
 
 
 var members = family.members;   
-members['nephew'] ={age:3, name:'hyun'};    // 객체에 새로운 속성 추가
+members['nephew'] = {age:3, name:'hyun'};    // 객체에 새로운 속성 추가
 members.brother = {age:5, name:'iyn'};  // 원래 있던 속성값을 수정
 delete members.aunt;   // 객체 속성 삭제 
 delete members['dog'];   // . 과 대괄호 두 가지로 접근 가능 
