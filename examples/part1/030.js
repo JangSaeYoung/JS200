@@ -22,7 +22,7 @@
 //     }
 // };
 
-var address = 'Seoul';
+var address = 'Seoul';   // 객체의 속성을 변수로 작성 _ 키 이름 = 변수명으로 정의 
 var members = {};
 var addFamily = function(age, name, role) {
     this.members[role] = {age, name};
@@ -31,17 +31,17 @@ var getHeadcount = function(){
     return Object.keys(this.members).length;
 };
 
-var family = {address, members, addFamily, getHeadcount};
+var family = {address, members, addFamily, getHeadcount}; //객체 리터럴 선언
 // 단축 속성명은 문자열, 객체, 함수 등 자료형에 상관없이 적용 가능
 
 family.addFamily(30, 'chole', 'aunt');
 family.addFamily(3, 'Iyn', 'niece');
 family.addFamily(10, 'dangdange','dog');
-console.log(family.getHeadcount());
+console.log('addFamily결과 >>>', family.getHeadcount());
 
 
 // 2. 속성 계산명 Computer Property Name
-// 객체 속성을 추가하는 방법을 알아봅니다. 
+// 속성 이름을 정의하는 다른 방법. 
 
 // * 대괄호 [] 안에 식을 넣거나 변수를 대입하여 동적으로 객체 속성들을 생성. 
 
@@ -49,11 +49,11 @@ var obj= {};
 for (var i =0; i < 4; i++){
     obj['key' + i] = i; // 속성 접근자 []를 활용하여 계산된 속성명 정의
 }
-console.log(obj);
+console.log('속성 계산명 >>>',obj);
 
-var profile = 'chloe:30';
+var profile = 'Jang:30';
 var person = {
-    [profile] : true, 
+    [profile] : true, // []안에 변수를 넣으면 해당 변수값이 속성명으로 정의
     [profile.split(':')[0]]: profile.split(':')[1] //{chloe:30: true, chloe: '30'}
 };
 console.log(person); 
@@ -77,7 +77,6 @@ console.log(`c >>> ${c}`);  // c >>> 30
 var {a:newA=10, f:newF=5} = obj1;
 console.log(`newA >>> ${newA}`); // newA >>> 1
 console.log(`newF >>> ${newF}`); // newF >>> 5
-
 console.log('-------------');
 
 // 배열 비구조화 할당
