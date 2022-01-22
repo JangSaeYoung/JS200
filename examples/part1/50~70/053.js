@@ -49,5 +49,5 @@ class ProductWithCode {
 }
 
 const product1 = new ProductWithCode('001');
-console.log(ProductWithCode.CODE_PREFIX);
-console.log(product1.code);
+console.log(ProductWithCode.CODE_PREFIX);  //PRODUCT-
+console.log(product1.code);  //PRODUCT-001
