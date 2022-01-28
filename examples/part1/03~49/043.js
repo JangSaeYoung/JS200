@@ -2,7 +2,7 @@
 //  함수 안에 함수를 선언한 중첩 함수(Nested Function)에서 자식 함수가
 //  부모 함수의 변수에 어떻게 접근 가능한지 알아본다. 
 
-// 스코프 체인 ( 문자 그대로 스코프가 연결되어 있음을 나타냄 )
+// 스코프 체인 ( 문자 그대로 스코프가 연결되어 있음을 나타냄 )                
 
 // 1. 실행 컨텍스트 Execution Context
 // - 코드가 실행되기 위해 필요한 정보를 가지고 있다. 
@@ -21,7 +21,7 @@ function print(){
 
     function innerPrint(){
         console.log(person);
-        console.log(person2);
+        console.log(person2); 
     }
     innerPrint();
 

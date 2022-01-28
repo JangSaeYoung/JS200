@@ -41,4 +41,4 @@ console.log(func instanceof Function);
 console.log(empty instanceof Object); //false => 실제로 null은 Object를 상속받은 객체가 아님. 
 console.log(arr instanceof Array);
 console.log(obj instanceof Object);
-console.log(notCalled instanceof undefined); // TypeError => undefined는 객체가 아니기 때문에 에러 발생. 
+// console.log(notCalled instanceof undefined); // TypeError => undefined는 객체가 아니기 때문에 에러 발생. 
