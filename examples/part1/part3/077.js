@@ -14,3 +14,17 @@ const str = 'Make your lives extradordinary';
 console.log(str.includes('Make')); // true
 console.log(str.includes('Make, 1')); // false
 
+
+
+// * 문자열 대소문자 변환하기 - toLowerCase, toUpperCase
+// - String 내장객체 메소드 
+// - 문자열의 대소문자를 일괄 변환할 수 있다. 
+
+// - toLowerCase() : 해당 문자열을 모두 소문자로 변환하여 반환
+// - toUpperCase () : 해당 문자열을 모두 대문자로 변환하여 반환
+
+console.log('Find Your Own Voice'.toLowerCase()); 
+console.log('Find Your Own Voice'.toUpperCase()); 
+
+const value = 'Find your Own Voice';
+console.log(value.toLowerCase() === value.toUpperCase());  // false
