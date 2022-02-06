@@ -177,3 +177,28 @@ console.log(arr1.shift()); // undefined
 const arr2 = ['melon', 'lemon', 'source', 'apple', 'juice'];
 console.log(`과일이 아닌 요소는 ${arr2.slice(2,3)}와 ${arr2.slice(4,5)} 입니다.`); // 과일이 아닌 요소는 source와 juice 입니다.
 console.log(arr2.slice(0,10)); // ['melon', 'lemon', 'source', 'apple', 'juice']
+
+
+// * 배열 인덱스로 특정 요소 수정하기 - splice
+// - Array 객체 메소드
+// - 특정 위치의 요소를 삭제하거나 수정.
+// 배열.splice(시작 인덱스, 삭제할 요소의 개수, 추가될 요소들 ... )
+
+// 첫 번째 인자: 시작 인덱스 - 배열 요소가 변경 될 시작 지점. 
+//            특정 위치의 요소를 지정하는 것이 필수 => 첫 번째 인자값은 배열 길이보다 작아야 유효.
+// 두 번째 인자: 삭제할 요소의 개수 
+//            시작 인덱스의 위치부터 삭제하고자 하는 개수만큼 요소를 제거
+//            해당 요소가 제거됨과 동시에 메소드 호출 결과로 값을 반환
+// 세 번째 인자: 추가될 요소
+//            시작 인덱스부터 해당 요소들이 추가
+
+const fruits = ['melon', 'lemon', 'source', 'apple', 'juice'];
+
+fruits.splice(4,1); 
+console.log(fruits);
+
+fruits.splice(4, 0, 'grape'); // 삭제할 개수를 지정하지 않아서 추출되는 요소 없음.
+console.log(fruits);
+
+fruits.splice(2,1,'mandarin','strawberry','watermelon'); // 세번째 인덱스를 활용하여 두개 이상의 요소를 추가 가능.
+console.log(fruits);
