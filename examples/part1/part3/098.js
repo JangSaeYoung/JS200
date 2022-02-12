@@ -10,7 +10,7 @@ const arr = [
     {id: 3, name: '우림', age:2},
 ];
 
-const arr2 = arr.map(el=> {   // map메소드를 통해 arr 배열의 각 요소가 매개 변수 el로 전달. 
+const arr2 = arr.map(el=> { // map메소드를 통해 arr 배열의 각 요소가 매개 변수 el로 전달. 
     el.age = el.age+1;
     return el;
 });
